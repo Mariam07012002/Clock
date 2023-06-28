@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  box-sizing: border-box;
+}
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(145deg, #08001f, #30197d, #39296d);
+  color: white;
+  position: relative;
+}
+.hero .container_box {
+  width: 800px;
+  height: 180px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero .container_box .clock_box {
+  width: 100%;
+  height: 100%;
+  background: #eb00ff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero .container_box .clock_box span {
+  font-size: 80px;
+  width: 110px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+.hero .container_box .clock_box span::after {
+  font-size: 16px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hero .container_box .clock_box #hrs::after {
+  content: 'HOURS';
+}
+.hero .container_box .clock_box #min::after {
+  content: 'MINS';
+}
+.hero .container_box .clock_box #sec::after {
+  content: 'SEC';
+}
